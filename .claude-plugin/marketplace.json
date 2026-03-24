@@ -2,12 +2,21 @@
     "name": "Yeva's-plugins",
     "description": "Yeva's plugin marketplace",
     "version": "1.0.0",
+    "owner": {
+        "name": "Yev4ik",
+        "url": "https://github.com/Yev4ik"
+    },
     "plugins": [
         {
             "name": "first-plugin",
             "description": "Generates websites using HTML+CSS, Flask, SQL and Javascript",
             "version": "1.0.0",
-            "path": ".."
+            "path": "..",
+            "source": {
+                "type": "github",
+                "url": "https://github.com/Yev4ik/first-plugin"
+            }
         }
     ]
 }
+
