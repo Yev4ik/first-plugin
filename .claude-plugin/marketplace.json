@@ -1,0 +1,13 @@
+{
+    "name": "Yev4ik-plugins",
+    "description": "Yeva's plugin marketplace",
+    "version": "1.0.0",
+    "plugins": [
+        {
+            "name": "first-plugin",
+            "description": "Generates websites using HTML+CSS, Flask, SQL and Javascript",
+            "version": "1.0.0",
+            "path": ".."
+        }
+    ]
+}
