@@ -1,6 +1,8 @@
 {
-    "name": "first-plugin",
-    "description": "Generates websites using HTML+CSS, Flask, SQL and Javascript",
-    "version": "1.0.0",
-    "author": "Zembytska Yeva"
+  "name": "first-plugin",
+  "description": "Generates websites using HTML+CSS, Flask, SQL and Javascript",
+  "version": "1.0.0",
+  "author": {
+    "name": "Zembytska Yeva"
+  }
 }
