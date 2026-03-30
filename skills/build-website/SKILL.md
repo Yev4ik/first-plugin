@@ -1,34 +1,36 @@
 ---
-name: build-website 
-description: Generates a web application using JS, HTML+CSS, Python and SQLite based on provided requirements.
+name: build-website
+description: Use when the user asks to "build a website", "create a web app", "generate a Flask project", "scaffold a site", or "make a web application". Generates a complete Flask + HTML/CSS + SQLite web application from requirements.
 ---
 
-# Detailed description
-This skill is used for creating web application with Python, JS, HTML+CSS, and SQL
+# Build Website
 
-## Stack 
-- backend: Flask + Blueprints
-- frontend: HTML + CSS, Javascript
-- templates: Jinja2 (built-in Flask)
-- local database: SQLite (via SQLAlchemy)
+Generate a complete web application with Python, JS, HTML+CSS, and SQLite.
 
-## Code style
-- Short and simple function names(for example: add_client)
-- Add simple and clear comment above each function
-- Always ask about changes you want to provide
-- Keep the structure of the project clean and simple
-- Divide code in different files depending on one page, so the structure of the project will be readable (EXCEPT FROM JS FILES).
+## Stack
+- Backend: Flask + Blueprints
+- Frontend: HTML + CSS, Javascript
+- Templates: Jinja2 (built-in Flask)
+- Database: SQLite (via SQLAlchemy)
+
+## Code Style
+- Use short and simple function names (e.g., `add_client`)
+- Add a simple and clear comment above each function
+- Always ask the user about changes before implementing them
+- Keep the project structure clean and simple
+- Divide code into different files per page for readability (except JS files)
 - One function does one thing only
-- You can edit structure with my permissions if in your opinion it will seem better.
+- Edit structure only with user permission
 
-## Project structure
+## Project Structure
+```
 README.md
 requirements.txt
-app.py 
+app.py
 models.py
 instance/
   app.db
-routes/ 
+routes/
   <page_name>.py
 templates/
   <page_name>.html
@@ -38,9 +40,10 @@ static/
   js/
     app.js
   images/
+```
 
-## Frontend styles 
-If plugin "frontend-design" is downloaded - follow the rules about the styles from there. If no follow the rules from this skill.
+## Frontend Styles
+If the `frontend-design` plugin is installed, follow its style rules. Otherwise follow the rules below.
 
 ### Design Thinking (Pre-Code Phase)
 Before coding, understand context and commit to a bold aesthetic direction:
@@ -50,40 +53,41 @@ Before coding, understand context and commit to a bold aesthetic direction:
 - Differentiation — What makes this unforgettable?
 
 ### Aesthetic Guidelines
-- Typography (Choose beautiful unique fonts. Avoid generic fonts like Arial, Inter, Roboto. Pair a distinctive display font with a refined body font.)
-- Color & Theme (Cohensive palette via CSS variables. Dominant colors + sharp accents>timid, evently-distributed palettes)
-- Motion(CSS-only animations for HTML. Focus on high-impact moments like stagged page-load reveals, scroll triggers, surprising hover states)
-- Spatial Composition (Unexpected layouts, asymmetry, overlap, diagonal flow, grid breaking elements, generous negative space OR cntrolled density)
-- Backgrounds & Details (Gradient meshes, noise textures, geometric patterns, layered transparencies, dramatic shadows, decorative borders, custom cursors, grain overlays)
-### NEVER USE:
+- Typography: Choose beautiful unique fonts. Avoid generic fonts like Arial, Inter, Roboto. Pair a distinctive display font with a refined body font.
+- Color & Theme: Cohesive palette via CSS variables. Dominant colors + sharp accents over timid, evenly-distributed palettes.
+- Motion: CSS-only animations for HTML. Focus on high-impact moments like staggered page-load reveals, scroll triggers, surprising hover states.
+- Spatial Composition: Unexpected layouts, asymmetry, overlap, diagonal flow, grid-breaking elements, generous negative space OR controlled density.
+- Backgrounds & Details: Gradient meshes, noise textures, geometric patterns, layered transparencies, dramatic shadows, decorative borders, custom cursors, grain overlays.
+
+### Avoid
 - Overused fonts
 - Cliched color schemes (purple gradients on white)
 - Predictable layouts and cookie-cutter components
 - The same design twice — vary themes, fonts, aesthetics across generations
-- Convergence on common choices (e.g. Space Grotesk)
-### ALWAYS
-- Implement real, working code (HTML/CSS/JS, React, Vue, etc.)
+
+### Always
+- Implement real, working code (HTML/CSS/JS)
 - Match implementation complexity to the aesthetic vision
 - Make every design visually striking, cohesive, and memorable
-- Execute with intentionality — bold maximalism and refined minimalism both work
 
-## Steps to build proper program
-1. Follow the rules from commands/build-site.md
-2. Based on the rules create proper project structure.
+## Build Steps
+1. Collect requirements via the `build-site` command
+2. Create proper project structure
 3. Set up Flask app with Blueprints in app.py
-4. Create models.py with database tables 
+4. Create models.py with database tables
 5. Create routes for each page
 6. Create HTML templates for each page
-7. Write CSS styles for each HTML template 
-8. Add JavaScript in one file 
-9. Test: run 'python app.py' and check for errors
+7. Write CSS styles for each HTML template
+8. Add JavaScript in one file
+9. Test: run `python app.py` and check for errors
 
-## Commands
-- Run app: python app.py
+## Run Command
+```
+python app.py
+```
 
-## Do not
-- Do not add any external libraries or frameworks (no npm, no CDN) without permission
+## Restrictions
+- Do not add external libraries or frameworks (no npm, no CDN) without user permission
 - Do not split into multiple JS files
-- Do not make it complicated - simple always win
-- Do not fabricate information - better say "I don't know" rather than hallucinating or lying to me. Honesty is the main tool here
-- Do not use Typescript - plain Javascript only
+- Keep it simple — simplicity always wins
+- Use plain Javascript only, no Typescript
