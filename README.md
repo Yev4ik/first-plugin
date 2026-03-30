@@ -35,9 +35,17 @@ This plugin helps you build, debug, and review full-stack web applications with 
 
 ## Installation
 
-Add this plugin to your Claude Code setup by placing it in your plugins directory or by adding the path to your Claude Code settings. Run:
-`/plugin marketplace add Yev4ik/yeva-marketplace`
-`/plugin install first-plugin@yeva-marketplace`
+Add this plugin to your Claude Code setup:
+
+```bash
+claude plugin add Yev4ik/first-plugin
+```
+
+Or for local development, clone the repo and add the path:
+
+```bash
+claude --plugin-dir ./first-plugin
+```
 
 ## Usage
 
