@@ -1,7 +1,9 @@
 {
   "name": "first-plugin",
-  "description": "Generates websites using HTML+CSS, Flask, SQL and Javascript",
+  "description": "Generates websites using HTML+CSS, Flask, SQLite and JavaScript",
   "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["flask", "web", "python", "sqlite", "fullstack", "generator"],
   "author": {
     "name": "Zembytska Yeva"
   }

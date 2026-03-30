@@ -1,5 +1,4 @@
 ---
-name: build-website 
 description: Generates a web application using JS, HTML+CSS, Python and SQLite based on provided requirements.
 ---
 
@@ -68,8 +67,8 @@ Before coding, understand context and commit to a bold aesthetic direction:
 - Execute with intentionality — bold maximalism and refined minimalism both work
 
 ## Steps to build proper program
-1. Follow the rules from commands/build-site.md
-2. Based on the rules create proper project structure.
+1. Collect requirements via the build-site skill before starting (ask about purpose, pages, database, design).
+2. Based on the requirements create proper project structure.
 3. Set up Flask app with Blueprints in app.py
 4. Create models.py with database tables 
 5. Create routes for each page

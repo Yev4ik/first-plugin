@@ -1,5 +1,4 @@
 ---
-name: review
 description: Review the code of a web app and provide feedback on its structure, style, and functionality. Use when user requests "review", "check", "give feedback", "what do you think about my project" or similar.
 ---
 

@@ -19,28 +19,32 @@ This plugin helps you build, debug, and review full-stack web applications with 
 
 ## Components
 
-### Commands
-
-| Command | Description |
-|---------|-------------|
-| `/build-site` | Interactive questionnaire that collects requirements (pages, database needs, design preferences) before generating a web app |
-
 ### Skills
 
-| Skill | Description |
-|-------|-------------|
-| `build-website` | Generates a complete web application following the defined stack, project structure, code style, and design guidelines |
-| `debug` | Diagnoses and fixes issues — routes, templates, database, auth, and frontend problems — with clear explanations |
-| `review` | Reviews project structure, code quality, and UI with a scored checklist (out of 10) and actionable suggestions |
+| Skill | Invocation | Description |
+|-------|-----------|-------------|
+| `build-site` | `/first-plugin:build-site` | Interactive questionnaire that collects requirements (pages, database needs, design preferences) before generating a web app |
+| `build-website` | auto-invoked | Generates a complete web application following the defined stack, project structure, code style, and design guidelines |
+| `debug` | auto-invoked | Diagnoses and fixes issues — routes, templates, database, auth, and frontend problems — with clear explanations |
+| `review` | auto-invoked | Reviews project structure, code quality, and UI with a scored checklist (out of 10) and actionable suggestions |
 
 ## Installation
 
-Add this plugin to your Claude Code setup by placing it in your plugins directory or by adding the path to your Claude Code settings. Run:
-`/plugin marketplace add Yev4ik/yeva-marketplace`
-`/plugin install first-plugin@yeva-marketplace`
+### As a plugin (recommended)
+
+```bash
+claude plugin add github:Yev4ik/first-plugin
+```
+
+### Via marketplace
+
+```bash
+/plugin marketplace add Yev4ik/first-plugin
+/plugin install first-plugin@yeva-marketplace
+```
 
 ## Usage
 
-Start by running the `/build-site` command to scaffold a new web application. The plugin will ask you about your site's purpose, pages, database needs, and design preferences, then generate the project.
+Start by running the `/first-plugin:build-site` skill to scaffold a new web application. The plugin will ask you about your site's purpose, pages, database needs, and design preferences, then generate the project.
 
 Use the `debug` and `review` skills naturally by describing your problem ("this route doesn't work", "review my project") and Claude will activate them automatically.

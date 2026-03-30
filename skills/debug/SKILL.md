@@ -1,5 +1,4 @@
 ---
-name: debug
 description: Help to find, fix and explain problems in code. Use when user says "debug" "fix", "doesn't work", "error", "something is broken", "not working", "getting an error"
 ---
 

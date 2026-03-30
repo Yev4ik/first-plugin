@@ -1,0 +1,15 @@
+{
+  "name": "yeva-marketplace",
+  "owner": {
+    "name": "Zembytska Yeva"
+  },
+  "plugins": [
+    {
+      "name": "first-plugin",
+      "source": "./",
+      "description": "Flask/SQLite web app generator — build, debug, and review full-stack web apps",
+      "version": "1.0.0",
+      "keywords": ["flask", "web", "python", "sqlite", "fullstack"]
+    }
+  ]
+}
