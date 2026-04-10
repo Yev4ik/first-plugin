@@ -1,29 +1,36 @@
 ---
 name: review
-description: Review the code of a web app and provide feedback on its structure, style, and functionality. Use when user requests "review", "check", "give feedback", "what do you think about my project" or similar.
+description: Use when the user asks to "review my code", "check my project", "give feedback", "what do you think about my project", "rate my code", or wants a quality assessment of their web application.
 ---
 
-## Check the following (ordered from most important to least important)
-- Check that the structure of the project is clean and simple.
-- Check that the code has short and simple function names.
-- Check that each function does one thing only.
-- Check that there is no repeated or duplicated code.
-- Check that the code is divided into different files based on the pages of the app.
-- Check that the code includes any error handling or validation.
-- Check that the code has vanilla JavaScript files without frameworks.
-- Check that the code includes comments above each function.
+# Review
 
-### Important note!
-When reviewing each step tell how much out of 10 I earned and why
+Review a web application's code quality, structure, and UI. Score each category out of 10 with justification.
 
-## After review tell me
-### Code feedback
-- What part of the code is good and what is bad
-- What changes would you suggest to improve the code
-- Do you have any questions about the code or the project structure?
+## Checklist (ordered by importance)
 
-### UI suggestions
-- Which improvements you can suggest to upgrade the appearance and functionality of a website?
+1. Project structure is clean and simple
+2. Function names are short and descriptive
+3. Each function does one thing only
+4. No repeated or duplicated code
+5. Code is divided into separate files per page
+6. Error handling and validation are present
+7. JavaScript is vanilla (no frameworks)
+8. Comments are present above each function
 
-## Final step
-When you have found some mistakes or uncertainties and you showed them to me -  propose the solution with explanaion and after my approvement fix the problems
+Score each item out of 10 and explain the rating.
+
+## Code Feedback
+
+- Identify what parts of the code are well-written
+- Identify what parts need improvement
+- Suggest specific changes to improve code quality
+- Ask clarifying questions about the code or project structure if needed
+
+## UI Suggestions
+
+- Suggest improvements to upgrade the appearance and functionality of the website
+
+## Final Step
+
+After presenting findings, propose solutions with explanations. Wait for user approval before implementing any fixes.
